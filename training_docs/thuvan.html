@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta author="Jenny Vo"/>
+	<title>Thuvan's traingin doc</title>
+	<script>
+	  var windowObjectReference;
+	  var strWindowFeatures = "menubar=no,location=no,resizable=no," +
+	  "status=yes,width=700,height=500,scrollbars=1,resizable=1,left=250," +
+	  "top=250";
+
+		 function openRequestedPopup(file_name, win_name) {
+		 	if (file_name === undefined)
+		 		file_name = 'test.html'
+		 	if (win_name === undefined)
+		 		win_name = 'Detail window'
+		  	windowObjectReference = window.open(file_name, win_name,
+		  strWindowFeatures);
+		 }
+	</script>
+	<style>
+		h1 {
+			text-align: center;
+			font-family: verdana;
+			color: red;
+		}
+		h2 {
+			font-family: verdana;
+			color: blue;
+		}
+		body {
+			width: 850px;
+			border: 1px solid gray;
+			margin: auto;
+			padding: 20px;
+		}
+		p {
+			font-size: 16px;
+			font-family: verdana;
+		}
+		.dropdown {
+			position: relative;
+			display: inline-block;
+		}
+
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			padding: 12px 16px;
+			z-index: 1;
+		}
+
+		.dropdown:hover .dropdown-content {
+			display: block;
+		}
+	</style>
+</head>
+<body>
+<h1>Training document for new employee</h1>
+<h2>Introduction</h2>
+<p>This is a paragraph.</p>
+<ol>
+	<li>item 1
+		<a href="test.html"
+			onclick="openRequestedPopup('test.html', 'Detail window'); return false;">click
+			here</a> for more info
+	</li>
+	<li>item 2 <button
+			onclick="openRequestedPopup('test.html', 'Details window')">	for
+		detials
+	</button> </li>
+	<li>item 2 <button
+			onclick="openRequestedPopup('test.html', 'Details window')">	for
+		detials
+	</button> </li>
+	<li>item 2 <button
+			onclick="openRequestedPopup('test.html', 'Details window')">	for
+		detials
+	</button> </li>
+	<li>item 2 <button
+			onclick="openRequestedPopup('test.html', 'Details window')">	for
+		detials
+	</button> </li>
+	<li>item 2 <button
+			onclick="openRequestedPopup('test.html', 'Details window')">	for
+		detials
+	</button> </li>
+</ol>
+<p>  Second paragrhap or more info here ... blah blah blah</p>
+<div class="dropdown">
+  <span>Mouse over me</span>
+  <div class="dropdown-content">
+    <p>Hello World! testing testing testing</p>
+  </div>
+</div>
+</body>
+</html>
+
