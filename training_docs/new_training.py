@@ -1,21 +1,5 @@
 #!/usr/bin/env python
 from common import base
-"""
-set_title = 'Thuvan trainning doc'
-page_title = ('<h1>Training Document</h1>')
-page_contents = ('<ol><li>First Documents</li>'
-                '<li>Second Document</li><li>Third Document</li>'
-                '</ol>')
-set_body = '{title}{contents}'.format(title=page_title, contents=page_contents)
-html_doc = ('<html><header><title>{'
-            'site_title}</title></header><body>{'
-            'body}</body></body></html').format(site_title=set_title,
-                                                body=set_body)
-
-my_html_file = open('/Users/jenny.vo/tests/training_docs/training_doc.html',
-                    'w')
-my_html_file.write(html_doc)
-"""
 
 def get_title():
     page_title = raw_input('Enter page title:')
